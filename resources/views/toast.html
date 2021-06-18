@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+         #toast{
+             min-width: 200px;
+             position: relative;
+             display: inline-block;
+             left: 50%;
+             margin:50px 0px;
+             background:black;
+             color:white;
+             padding:10px;
+             text-align: center;
+             z-index: 1;
+
+             visibility: hidden;
+         }
+         #toast.display{
+             visibility: visible;
+         }
+body{
+         font-size:15px;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+</style>
+ </head>
+ <body>
+      <h1>Toast</h1>
+     <button onclick="showToast()" class="login">Click here</button>
+     <div id="toast" >Hi I'm a Toast</div>
+ </body>
+ </html> 
+
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+ <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+ <!-- <script>
+function showToast(){
+    $('#toast').addClass("display");
+
+    setTimeout(()=>{
+    $('#toast').removeClass("display");
+
+    },2000);
+}
+ </script> --> -->
+
+<!-- <h1>Toast</h1>
+<button onclick="showToast()">Click here</button>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script>
+    function showToast(){
+    Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Item added to cart',
+  showConfirmButton: false,
+  timer: 1500
+});
+    }
+</script> -->
+<script>
+    function showToast(){
+    var toastMixin = Swal.mixin({
+        toast: true,
+        icon: 'success',
+        title: 'General Title',
+        animation: false,
+        position: 'top-right',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+
+    document.querySelector("#login").addEventListener('click', function() {
+        toastMixin.fire({
+            animation: true,
+            title: 'Signed in Successfully'
+        });
+    });
+    }
+</script>
+

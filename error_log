@@ -1,0 +1,15 @@
+[29-Oct-2020 21:38:58 Asia/Kathmandu] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Response' not found in /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php:453
+Stack trace:
+#0 /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(305): Illuminate\Foundation\Exceptions\Handler->toIlluminateResponse(Object(Symfony\Component\HttpFoundation\Response), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#1 /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(210): Illuminate\Foundation\Exceptions\Handler->prepareResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#2 /home/daddyskitchencom/public_html/app/Exceptions/Handler.php(53): Illuminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#3 /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illum in /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 453
+[29-Oct-2020 21:48:45 Asia/Kathmandu] PHP Fatal error:  Class 'Symfony\Component\HttpFoundation\Response' not found in /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Http/Response.php on line 14
+[29-Oct-2020 21:48:53 Asia/Kathmandu] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Response' not found in /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php:453
+Stack trace:
+#0 /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(305): Illuminate\Foundation\Exceptions\Handler->toIlluminateResponse(Object(Symfony\Component\HttpFoundation\Response), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#1 /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(210): Illuminate\Foundation\Exceptions\Handler->prepareResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#2 /home/daddyskitchencom/public_html/app/Exceptions/Handler.php(53): Illuminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#3 /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illum in /home/daddyskitchencom/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 453
+[30-Oct-2020 21:10:38 Asia/Kathmandu] PHP Warning:  Unterminated comment starting line 513 in /home/daddyskitchencom/public_html/vendor/symfony/http-foundation/Response.php on line 513
+[07-Nov-2020 18:09:13 Asia/Kathmandu] PHP Fatal error:  Can't use method return value in write context in /home/daddyskitchencom/public_html/app/Http/Controllers/Api/OrderController.php on line 94

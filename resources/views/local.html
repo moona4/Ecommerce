@@ -1,0 +1,33 @@
+<input type="text" class="storage">
+        <input type="text" class="email">
+        <p class="text">Text</p>
+        <p class="text1">Email</p>
+
+        var names = [];
+    // names[0] = prompt("New member name?");
+    localStorage.setItem("names", JSON.stringify(names));
+    var storedNames = JSON.parse(localStorage.getItem("names"));
+
+    // const storageInput=document.querySelector('.storage');
+    // const storageEmail=document.querySelector('.email');
+    // const text=document.querySelector('.text');
+    // const text2=document.querySelector('.text1');
+
+    // const button = document.querySelector('.button');
+    // const storedInput=localStorage.getItem('textinput');
+    // const storedEmail=localStorage.getItem('tex')
+
+
+    // if(storedInput){
+    //     text.textContent=storedInput
+    // }
+
+    // storageInput.addEventListener('input', letter=>{
+    //     text.textContent=letter.target.value;
+    // })
+
+    // const saveToLocalStorage = () =>{
+    //     localStorage.setItem('textinput',text.textContent)
+    // }
+
+    // button.addEventListener('click',saveToLocalStorage)
